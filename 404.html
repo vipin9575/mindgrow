@@ -7,10 +7,15 @@
   </head>
   <body>
     <h1>404 - Not Found</h1>
-    <p>If you see this message, we can't find the requested page. You will be redirected to the homepage.</p>
+    <p>
+      If you see this message, we can't find the requested page. You will be
+      redirected to the homepage.
+    </p>
     <script type="text/javascript">
       // Redirect to the root index.html page so React Router can take over
-      window.location.replace("/mindgrow/");
+      window.location.replace(
+        window.location.pathname + window.location.search
+      );
     </script>
   </body>
 </html>
